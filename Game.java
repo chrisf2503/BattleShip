@@ -1,6 +1,6 @@
 package BattleShip;
 import java.util.*;
-import java.io.*;
+//import java.io.*;
 
 public class Game{
   private ArrayList<Piece> p1;
@@ -11,7 +11,7 @@ public class Game{
   public Game(ArrayList<Piece> player, ArrayList<Piece> cpu){
     p1 = player;
     this.cpu = cpu;
-    readFile();
+    //readFile();
   }
   public boolean hitOrMiss(int row, int col, char[][] mainBoard){
     if(mainBoard[row][col] == 'B'){
@@ -93,7 +93,7 @@ public class Game{
   public int playerListSize(){
     return p1.size();
   }
-  public void updateFile(boolean ifPlayerWon){
+  /*public void updateFile(boolean ifPlayerWon){
     String num;
     try{
       FileWriter his = new FileWriter("History.txt");
@@ -133,6 +133,6 @@ public class Game{
       System.out.println("File is not found");
       e.printStackTrace();
     }
-  }
+  }//*/
   //Add a return method for wins and match played
 }

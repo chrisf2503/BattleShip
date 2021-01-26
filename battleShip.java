@@ -164,11 +164,11 @@ class battleShip {
         p.boardGame2();
         if (winner == 2) {
             System.out.println("Player Wins");
-            g.updateFile(true);
+            //g.updateFile(true);
         } 
         else if (winner == 1) {
             System.out.println("Computer Wins");
-            g.updateFile(false);
+            //g.updateFile(false);
         }//*/
     }
 
